@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FACIAL RECOGNITION</h1>
+        <!-- Début du formulaire -->
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="upload-section">
+                <div class="upload-box">
+                    <img src="/static/placeholder1.png" alt="Placeholder Image" class="placeholder">
+                    <label for="image1">Image 1</label>
+                    <input type="file" id="image1" name="known_image" accept="image/*" required>
+                </div>
+                <div class="upload-box">
+                    <img src="/static/placeholder2.png" alt="Placeholder Image" class="placeholder">
+                    <label for="image2">Image 2</label>
+                    <input type="file" id="image2" name="unknown_image" accept="image/*" required>
+                </div>
+            </div>
+            <!-- Bouton Submit -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <!-- Fin du formulaire -->
+    </div>
+</body>
+</html>

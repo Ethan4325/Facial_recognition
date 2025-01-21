@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 500px; /* Adjusted width for symmetry */
+}
+
+/* Page title */
+h1 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 30px;
+}
+
+/* Upload Section */
+.upload-section {
+    display: flex;
+    justify-content: flex-start; /* Aligns boxes to the left */
+    gap: 20px; /* Space between the boxes */
+    margin-bottom: 20px;
+    padding-right: 60px; /* Optional: Adds padding to move boxes slightly to the right */
+}
+
+
+/* Upload box */
+.upload-box {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%; /* Mini-box width fits perfectly in the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between elements */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder image */
+.placeholder {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Rounded corners for images */
+    background-color: #d9d9d9;
+    object-fit: cover;
+}
+
+/* Label styles */
+label {
+    font-size: 14px;
+    color: #666666;
+    margin: 10px 0; /* Adds spacing around the label */
+}
+
+/* Input styles */
+input[type="file"] {
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 80px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px; /* Space between label and input */
+}
+
+/* Center the submit button inside the mini-box */
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ensures the button behaves as a block element */
+    margin: 20px auto 0; /* Centers the button horizontally and adds top margin */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
