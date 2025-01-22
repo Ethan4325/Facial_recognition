@@ -8,10 +8,11 @@ WORKDIR /app
 COPY . /app
 
 # Installer les dépendances
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Exposer le port sur lequel Flask sera disponible
 EXPOSE 5000
 
 # Commande pour lancer l'application
-CMD ["python", "application.py"]
+CMD ["python3", "app.py"]
